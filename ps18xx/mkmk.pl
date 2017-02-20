@@ -1,5 +1,6 @@
 #!perl
 
+use lib '.';
 use strict;
 use warnings;
 use Getopt::Std;
