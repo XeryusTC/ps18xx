@@ -81,14 +81,15 @@
 
 %blank hexes
 	tileCodes 401 [ 500 0 //tlGround //tlPlain    ()     ()    0 ] put
-	tileCodes 402 [ 500 0 //tlGround //tlWater    (£20)  ()    0 ] put
-	tileCodes 403 [ 500 0 //tlGround //tlWater2   (£40)  ()    0 ] put
-	tileCodes 404 [ 500 0 //tlGround //tlHill     (£60)  ()    0 ] put
-	tileCodes 406 [ 500 0 //tlGround //tlMountain (£80)  ()    0 ] put
+	tileCodes 402 [ 500 0 //tlGround //tlWater    (f20)  ()    0 ] put
+	tileCodes 403 [ 500 0 //tlGround //tlWater2   (f40)  ()    0 ] put
+	tileCodes 404 [ 500 0 //tlGround //tlHill     (f40)  ()    0 ] put
+	tileCodes 406 [ 500 0 //tlGround //tlMountain (f60)  ()    0 ] put
 
 % Single small station
 	tileCodes 410 [ 501 0 //tlGround //tlPlain    ()     ()    0 ] put
 	tileCodes 411 [ 501 0 //tlGround //tlWater2   (£40)  ()    0 ] put
+	tileCodes 412 [ 501 0 //tlGround //tlHill     (f40)  ()    0 ] put
 
 % Double small station
 	tileCodes 420 [ 502 0 //tlGround //tlPlain    ()     ()    0 ] put
@@ -108,7 +109,7 @@
 	tileCodes 442 [ 132 3 //tlYellow //tlPlain    (BM)   (40)  0 ] put
 	tileCodes 443 [  32 0 //tlGround //tlWater    (L £20    ) (20) 0 ] put
 	tileCodes 444 [ 246 0 //tlYellow //tlPlain    (EC £100) () 0 ] put
-	tileCodes 445 [ 132 0 //tlYellow //tlPlain    (Y)    (30) 0 ] put
+	tileCodes 445 [ 132 0 //tlYellow //tlHill     (   Y f40) (30)  0 ] put
 
 % Off-board hexes
 	tileCodes 450 [ 272 0 //tlRed    //tlPlain    ()     (3/4/5/6) 0 ] put
@@ -127,6 +128,7 @@
 	tileCodes 462 [ 507 0 //tlRed    //tlPlain    ()     () 0 ] put
 	tileCodes 463 [ 509 0 //tlNoHex  //tlPlain    ()     () 0 ] put
 	tileCodes 464 [ 500 0 //tlRed    //tlPlain    ()     () 0 ] put
+	tileCodes 465 [ 505 0 //tlBlue   //tlPlain    ()     (2/4/6/7) 0 ] put
 
 % Overlays
 	tileCodes 480 [ 500 0 //tlTransparent //tlPlain () () 0 ] put
@@ -153,10 +155,12 @@
 	tileCodes 500 [ 509 0 //tlTransparent //tlPlain () () 0 ] put
 	tileCodes 501 [ 500 0 //tlTransparent //tlPlain () (2/3/4/5) 0 ] put
 
-% Amsterdam
+% Custom cities
 	tileCodes 712 [ 132 0 //tlYellow      //tlPlain (Y)  (30) 0 ] put
 	tileCodes 713 [  13 0 //tlYellow      //tlPlain (BM)   ()   0 ] put
 	tileCodes 714 [ 332 0 //tlTransparent //tlPlain (BM) (40) 0 ] put
+	tileCodes 715 [  12 0 //tlYellow      //tlPlain (Y)  (30) 0 ] put
+	tileCodes 716 [ 332 0 //tlTransparent //tlPlain ()   ()   0 ] put
 
 % Upgrade Plain 401 => 7/* 8/* 9/*
 % Upgrade Plain 402 => 7/* 8/* 9/*
