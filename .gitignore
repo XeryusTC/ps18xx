@@ -2,3 +2,4 @@ Makefile
 ps18xx/*.ps
 ps18xx/*.tl
 ps18xx/*.pdf
+ps18xx/1822nl/*.ps
